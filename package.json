@@ -1,0 +1,20 @@
+{
+  "name": "gobadi-email-service",
+  "version": "1.0.0",
+  "description": "Standalone email sending service for Gobadi (Vercel Serverless)",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.0",
+    "@types/node": "^20.0.0",
+    "@vercel/node": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}
