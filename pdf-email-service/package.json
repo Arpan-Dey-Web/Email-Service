@@ -1,0 +1,29 @@
+{
+  "name": "gobadi-pdf-email-service",
+  "version": "1.0.0",
+  "description": "Standalone PDF generation & email dispatch microservice (Vercel Serverless)",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@upstash/ratelimit": "^2.0.0",
+    "@upstash/redis": "^1.30.0",
+    "nodemailer": "^10.0.10",
+    "pdfkit": "^0.20.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/nodemailer": "^6.4.0",
+    "@types/pdfkit": "^0.13.0",
+    "@vercel/node": "^13.0.1",
+    "typescript": "^5.5.0"
+  },
+  "overrides": {
+    "ajv": "^8.17.1",
+    "path-to-regexp": "^6.3.0",
+    "undici": "^6.21.1"
+  }
+}
